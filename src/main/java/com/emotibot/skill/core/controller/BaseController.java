@@ -50,7 +50,7 @@ public class BaseController
             wait = !videoTask.isDone();
         }
         long end = System.currentTimeMillis();
-        logger.debug("Module耗时：" + (end - start) + "毫秒");
+        logger.debug(parentModule.getClass().getSimpleName() + "耗时：" + (end - start) + "毫秒");
     }
     
     /**
